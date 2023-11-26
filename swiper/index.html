@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <video autoplay loop mute src="/video.mp4"></video>
+                <div class="img-data">
+                    <span class="text">Grab Deal Fast. Hurry Up :-</span>
+                    <h2>Enjoy The Deals.</h2>
+                    <a href="" class="button">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="/slide2.jpg" alt="" srcset="">
+                <div class="img-data">
+                    <span class="text">Grab Deal Fast. Hurry Up :-</span>
+                    <h2>Enjoy The Deals.</h2>
+                    <a href="" class="button">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="/slide3.jpg" alt="" srcset="">
+                <div class="img-data">
+                    <span class="text">Grab Deal Fast. Hurry Up :-</span>
+                    <h2>Enjoy The Deals.</h2>
+                    <a href="" class="button">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="/slide4.jpg" alt="" srcset="">
+                <div class="img-data">
+                    <span class="text">Grab Deal Fast. Hurry Up :-</span>
+                    <h2>Enjoy The Deals.</h2>
+                    <a href="" class="button">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

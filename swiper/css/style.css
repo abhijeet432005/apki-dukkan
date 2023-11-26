@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(198, 227, 225);
+}
+
+.wrapper, .slide{
+    width: 100%;
+    height: 100%;
+}
+
+.slide{
+    overflow: hidden;
+}
+
+.slide::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    /* z-index: 10; */
+}
+.slide img{
+    height: 100%;
+    width: 100%;
+    margin-top: 60px;
+    object-fit: cover;
+
+}
+
+.slide video{
+    height: 100%;
+    width: 100%;
+    margin-top: 60px;
+    object-fit: cover;
+}
+
+.slide .img-data{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
+.img-data span.text{
+    font-size: 4vw;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffff;
+}
+
+.img-data h2{
+    font-size: 2vw;
+    color: #ffff;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+a.button{
+    display: inline-block;
+    padding: 15px 20px;
+    font-weight: bold;
+    background-color: aliceblue;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: all .3s ease;
+
+}
+
+a.button:hover{
+    background-color: transparent;
+    margin-top: 5px;
+    color: #ffff;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/* Swiper Btn CSS */
+
+.nav-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255,0.3);
+}
+
+.nav-btn:hover{
+    background: rgb(255, 255, 255,0.4);
+}
+
+.swiper-button-next{
+    right: 50px;
+
+}
+.swiper-button-prev{
+left: 50px;
+}
+
+
+
+.nav-btn::before,
+.nav-btn::after{
+    font-size: 25px;
+    color: #ffff;
+}
+
+.swiper-pagination-bullet{
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background-color: #ffff;
+    
+}
+
+.swiper-pagination-bullet-active{
+    border: 2px solid #ffff;
+    background-color: rgb(71, 70, 70);
+}
