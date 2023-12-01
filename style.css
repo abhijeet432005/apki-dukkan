@@ -1355,7 +1355,25 @@ footer a:hover{
         border: none;
         outline: none;
     }
+
+    /*                           shop                                         */
+
+    .shop-front {
+        height: 32vh;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 477px) {
@@ -1557,6 +1575,12 @@ footer a:hover{
 
     .install{
         margin-top: 20px;
+    }
+
+    /*                          shop                         */
+
+    .shop-front {
+        height: 22vh;
     }
 
     #pagination{
