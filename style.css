@@ -65,7 +65,7 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(236, 240, 243);
-    padding: 6px 150px;
+    padding: 6px 50px;
     z-index: 999;
     position: sticky;
     top: 0;
@@ -992,81 +992,58 @@ footer a:hover{
 
 @media(max-width:1300px){
 
+    #header .logo {
+        height: 3.5vh;
+    }
+
     #header{
         padding: 6px 15px;
     }
+    
     #navbar li {
         padding: 0 37px 19px 15px;
     }
+
+    
     .upper {
         font-size: 15px;
-        padding: 10px 80px 15px 99px;
+        padding: 7px 0px 16px 29px;
     }
+    
+    .main {
+        height: 31vh;
+        width: 100%;
+    }
+
+    .text-box h3 {
+        font-size: 2vw;
+    }
+
+    .text-box .btn {
+        font-size: 22px;
+        width: 177px;
+        padding: 22px 0px;
+        margin: 8px 10px;
+        border-radius: 50px;
+        transition: .2s;
+    }
+    
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    
+
     .text-box h1 {
         padding: 0 0px;
     }
 
-    .section-p1 {
-        padding: 28px 46px;
-    }
-
-    #sm-banner .banner-box{
-        min-width: 101%;
-        height: 66vh;
-        margin: 0 0px 50px;
-    }
-
-    #sm-banner h2 {
-        font-size: 45px;
-        padding-bottom: 10px;
-    }
-    #sm-banner span {
-        color: #ffffff;
-        font-size: 30px;
-        font-weight: 500;
-        padding-bottom: 20px;
-    }
-
-    #sm-banner h4 {
-        font-size: 30px;
-    }
-    #banner3 {
-        padding: 20px 45px;
-    }
-
-    #banner3 .banner-box {
-        height: 30vh;
-        padding: 0px;
-        margin-bottom: 20px;
-        width: 32%;
-    }
-    #banner3 h2 {
-        font-size: 19px;
-        padding-left: 14px;
-    }
-    #banner3 h3 {
-        font-size: 2.5vh;
-        padding-left: 14px;
-    }
-    #newsletter .sign{
-        font-size: 14px;
-        font-weight: 600;
-        padding: 7px 23px;
-        color: #000;
-        background-color: #045b55;
-        border-radius: 4px;
-        cursor: pointer;
-        border: none;
-        outline: none;
-    }
-}
-
-
-@media(max-width:1024px){
-    .upper {
-        font-size: 15px;
-        padding: 7px 28px 14px 10px;
-    }
+    
     #product1 .pro {
         width: 24%;
     }
@@ -1090,7 +1067,83 @@ footer a:hover{
         bottom: 37px;
         right: 10px;
     }
+
+    #banner {
+        height: 20vh;
+    }
+
+    .section-p1 {
+        padding: 28px 46px;
+    }
+
+    #sm-banner .banner-box{
+        min-width: 101%;
+        height: 35vh;
+        margin: 0 0px 50px;
+    }
+
+    #sm-banner h2 {
+        font-size: 45px;
+        padding-bottom: 10px;
+    }
+    #sm-banner span {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+
+    #sm-banner h4 {
+        font-size: 30px;
+    }
+
+
+    .banner-box button {
+        font-size: 20px;
+    }
+
+
+    #banner3 {
+        padding: 20px 45px;
+    }
+    
+    #banner3 h2 {
+        padding-left: 15px;
+        font-size: 4vw;
+        margin-bottom: 8px;
+    }
+
+    #banner3 h3{
+        padding-left: 15px;
+        font-size: 3vw;
+    }
+
+    #banner3 .banner-box {
+        height: 40vh;
+        padding: 0px;
+        margin-bottom: 20px;
+        width: 32%;
+    }
+
+    #banner3 .banner-box{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #newsletter .sign{
+        font-size: 14px;
+        font-weight: 600;
+        padding: 7px 23px;
+        color: #000;
+        background-color: #045b55;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
 }
+
+
 
 
 
@@ -1191,7 +1244,7 @@ footer a:hover{
         z-index: 100;
     }
     .text-box h1 {
-        font-size: 52px;
+        font-size: 40px;
         color: #fff;
         padding: 0px 120px;
     }
@@ -1199,6 +1252,12 @@ footer a:hover{
         font-size: 2vw;
         color: #ffff;
     }
+
+    .text-box h3 {
+        font-size: 2vw;
+        padding: 10px 45px;
+    }
+
     .text-box .btn {
         color: #fff;
         font-size: 20px;
@@ -1214,13 +1273,23 @@ footer a:hover{
         transition: .5s;
     }
     .text-box span.text {
-        font-size: 43px;
-        font-weight: bold;
-        color: #ffff;
+        font-size: 34px;
     }
+
     .text-box h2 {
-        font-size: 4vw;
+        font-size: 3vw;
         color: #ffff;
+        line-height: 40px;
+    }
+
+    /* slide --nav button  */
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+    .swiper-button-next {
+        right: 10px;
     }
 
 
@@ -1251,25 +1320,30 @@ footer a:hover{
     }
 
     #banner{
-        height: 20vh;
+        height: 25vh;
     }
 
 
     #sm-banner .banner-box{
         min-width: 101%;
-        height: 33vh;
+        height: 45vh;
         margin: 0 0px 50px;
     }
 
     #banner3{
         padding: 0 40px;
     }
-    /* #banner3 .banner-box {
-        height: 30vh;
+
+    #banner3 h2 {
+        font-size: 30px;
+    }
+
+    #banner3 .banner-box {
+        height: 40vh;
         padding: 0px;
         margin-bottom: 20px;
         width: 32%;
-    } */
+    }
 
     #banner3 .banner-box{
         width: 100%;
