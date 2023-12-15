@@ -386,6 +386,7 @@ a.button:hover{
 
 #product1 .pro img{
     width: 100%;
+    height: 37vh;
     border-radius: 20px;
     transition: 0.5s all ease-in-out;
 }
@@ -829,6 +830,10 @@ footer a:hover{
     margin-right: 50px;
 }
 
+#prodetails .single-pro-image #MainImage{
+    height: 70vh;
+}
+
 .small-img-group{
     display: flex;
     justify-content: space-between;
@@ -837,6 +842,10 @@ footer a:hover{
 .small-img-col{
     flex-basis: 24%;
     cursor: pointer;
+}
+
+.small-img-col img{
+    height: 20vh;
 }
 
 #prodetails .single-pro-details{
@@ -2149,6 +2158,13 @@ footer a:hover{
         padding-left: 0px;
     }
 
+    /*                                  single product image                      */
+
+
+    #prodetails .single-pro-image {
+        width: 80%;
+        margin-right: 50px;
+    }
 }
 
 
@@ -2405,6 +2421,21 @@ footer a:hover{
         width: 100%;
     }
 
+    /*                                  single product image                      */
+
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 50px;
+    }
+
 }
 
 
@@ -2623,7 +2654,7 @@ footer a:hover{
     }
 
 
-    /* single product */
+    /*                               single product                                         */
 
     #prodetails {
         display: flex;
@@ -2632,6 +2663,14 @@ footer a:hover{
     #prodetails .single-pro-image {
         width: 100%;
         
+    }
+
+    #prodetails .single-pro-image #MainImage{
+        height: 46vh;
+    }
+
+    .small-img-col img{
+        height: 10vh;
     }
 
     #prodetails .single-pro-details {
