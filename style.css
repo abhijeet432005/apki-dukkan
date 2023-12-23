@@ -1038,17 +1038,141 @@ footer a:hover{
 
 
 
+/*                          contact us page           */
+
+#contact_detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#contact_detail .detail{
+    width: 40%;
+}
+
+#contact_detail .detail span,
+#form_detail form span{
+    font-size: 12px;
+}
 
 
+#contact_detail .detail h2,
+#form_detail form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact_detail .detail h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact_detail .detail li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0
+}
+
+#contact_detail .detail li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact_detail .detail li p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact_detail .map{
+    width: 60vw;
+    height: 70vh;
+    margin: 10vh 0 10vh 5vh;
+}
+
+#contact_detail .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#form_detail{
+    width: 50vw;
+    height: 100%;
+    margin: 30px auto 0 auto;
+    border: 1px solid #dacfcf;
+    border-radius: 20px;
+    margin-bottom: 15vh;
+
+}
+
+#form_detail form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
 
 
+#form_detail form input,
+#form_detail form text,
+#form_detail form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #dacfcf;
+}
 
+#form_detail form button{
+    font-size: 15px;
+    color: #F0F0F0;
+    padding: 10px 25px 10px 25px;
+    margin-top: 19px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #cce7d0;
+    background-color: rgb(100, 15, 15);
+    transition: 0.8s;
 
+}
+
+#form_detail form button:hover{
+    background-color: #780606;
+}
+
+#form_detail .people{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form_detail .people img{
+    width: 5.5vw;
+    height: 12vh;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#form_detail .people p{
+    margin: 0;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+#form_detail .people p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
 
 
 
 
 /* start media query */
+
 
 
 
@@ -1382,6 +1506,8 @@ footer a:hover{
 
 }
 
+
+
 @media(max-width:1024px){
 
     #header{
@@ -1586,6 +1712,14 @@ footer a:hover{
 
     #blog .blog-details p{
         font-size: 22px;
+    }
+
+
+    /*                                          contact  */
+
+    #form_detail{
+        height: 100vh;
+        margin-bottom: 10vh;
     }
 }
 
@@ -1881,6 +2015,13 @@ footer a:hover{
     #about-app .video {
         width: 80vw;
     }
+
+    /*                                                      contact  */
+
+    #form_detail {
+        height: 100%;
+        margin-bottom: 10vh;
+    }
 }
 
 
@@ -2038,6 +2179,10 @@ footer a:hover{
 
     /* products */
 
+    #product1 .pro img{
+        height: 33vh;
+    }
+
     #product1 .pro-container{
         justify-content: center;
     }
@@ -2135,7 +2280,7 @@ footer a:hover{
     }
 
 
-    /*                                                                      about */
+    /*                                   about                   */
 
     #about-head{
         height: 30vh;
@@ -2161,9 +2306,32 @@ footer a:hover{
     /*                                  single product image                      */
 
 
+    #prodetails .single-pro-image #MainImage {
+        height: 57vh;
+    }
+
+    .small-img-col img {
+        height: 15vh;
+    }
+
     #prodetails .single-pro-image {
         width: 80%;
         margin-right: 50px;
+    }
+
+
+    /*                              contact  */
+
+    #form_detail form h2 {
+        font-size: 25px;
+    }
+
+    #form_detail form{
+        width: 100%;
+    }
+
+    #form_detail {
+        width: 94vw;
     }
 }
 
@@ -2434,6 +2602,47 @@ footer a:hover{
     #prodetails .single-pro-image {
         width: 100%;
         margin-right: 50px;
+    }
+
+    /*                                                      contact  */
+
+    #contact_detail{
+        flex-direction: column;
+    }
+
+    #contact_detail .detail{
+        width: 100%;
+    }
+
+    #contact_detail .map {
+        width: 90vw;
+        height: 68vh;
+        margin: 10vh 0 10vh 0vh;
+    }
+
+    #form_detail {
+        width: 90vw;
+        padding-left: 6vw;
+
+    }
+
+    #form_detail form{
+        width: 100%;
+    }
+
+    #form_detail form h2 {
+        font-size: 17px;
+    }
+
+    #contact_detail .detail span, #form_detail form span {
+        
+        margin-top: 17px;
+    }
+
+    #form_detail form input, 
+    #form_detail form text, 
+    #form_detail form textarea {
+        width: 77vw;
     }
 
 }
@@ -2745,12 +2954,12 @@ footer a:hover{
     }
 
     #header .logo {
-        height: 4.5vh;
+        height: 3.5vh;
     }
     
     #mobile i {
         color: #1a1a1a;
-        font-size: 15px;
+        font-size: 19px;
         padding-left: 12px;
     }
 
@@ -2762,6 +2971,12 @@ footer a:hover{
     .main{
         height: 30vh;
     }
+
+    .swiper-pagination-bullet {
+        height: 8px;
+        width: 7px;
+    }
+
 
     .text-box{
         top: 10vh;
@@ -2829,6 +3044,10 @@ footer a:hover{
         margin: 15px 0;
     }
 
+    #product1 .pro img {
+        height: 28vh;
+    }
+
     #product1 h2{
         line-height: 40px;
     }
@@ -2837,6 +3056,7 @@ footer a:hover{
         width: 100%;
         margin: 10px;
     }
+
 
     #product1 .pro .cart {
         width: 12vw;
