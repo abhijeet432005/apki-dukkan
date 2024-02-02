@@ -7,6 +7,10 @@
     font-family: "Spartan", sans-serif;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}  /*this will hide scroll bar  */
+
 h1{
     font-size: 50px;
     line-height: 64px;
