@@ -2856,7 +2856,7 @@ footer a:hover{
     }
 
     #sm-banner span {
-        font-size: 21px;
+        font-size: 17px;
     }
 
     #banner3 {
@@ -2881,6 +2881,13 @@ footer a:hover{
     }
     #newsletter p {
         font-size: 15px;
+    }
+
+    #newsletter input {
+        height: 3.15rem;
+        padding: 0 1rem;
+        font-size: 12px;
+        width: 100%;
     }
 
     #newsletter .form {
@@ -2915,8 +2922,8 @@ footer a:hover{
 
     
     footer .install img {
-        width: 37%;
-        height: 12vw;
+        width: 60%;
+        height: 12.5vw;
         margin: 10px 0 15px 0;
     }
 
