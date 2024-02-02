@@ -2341,7 +2341,6 @@ footer a:hover{
 
 
 
-
 @media(max-width:600px){
     .section-p1{
         padding: 40px 40px;
@@ -2359,9 +2358,8 @@ footer a:hover{
     }
 
     #header .logo {
-        height: 3.8vh;
+        height: 4vh;
     }
-
 
     #navbar {
         display: flex;
@@ -2417,7 +2415,8 @@ footer a:hover{
     }
 
     .upper {
-        font-size: 10px;
+        font-size: 12px;
+        display: block;
         padding: 0px 15px 3px 8px;
         text-align: center;
     }
@@ -2426,7 +2425,7 @@ footer a:hover{
     /* slides  */
 
     .main {
-        height: 40vh;
+        height: 50vh;
     }
     .slide .text-box {
         position: absolute;
@@ -2439,34 +2438,35 @@ footer a:hover{
         z-index: 100;
     }
     .text-box h1 {
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 30px;
+        padding: 0px 80px;
     }
     .text-box h2 {
-        font-size: 2.8vw;
-        line-height: 20px;
+        font-size: 2vw;
+        color: #ffff;
     }
 
     .text-box h3 {
-        font-size: 2.2vw;
+        font-size: 2vw;
         padding: 10px 45px;
     }
 
     .text-box .btn {
-        font-size: 16px;
-        width: 119px;
+        font-size: 20px;
+        width: 150px;
         padding: 12px 0px;
-        margin: 8px 0px;
-    }
+        margin: 0px 19px;
 
+    }
     .text-box span.text {
-        font-size: 28px;
-        line-height: 40px;
+        font-size: 34px;
     }
 
-    a.button{
-        padding: 12px 18px;
-        margin-top: 10px;
+    .text-box h2 {
+        font-size: 3vw;
+        color: #ffff;
+        line-height: 40px;
     }
 
     /* slide --nav button  */
@@ -2493,36 +2493,42 @@ footer a:hover{
 
     /* products */
 
+    #product1 .pro img{
+        height: 33vh;
+    }
+
     #product1 .pro-container{
         justify-content: center;
     }
 
     #product1 .pro{
-        width: 42%;
+        width: 53vh;
         margin: 15px;
     }
 
     #product1 .pro .cart {
-        width: 5vw;
+        width: 7vw;
     }
 
     #banner{
         height: 25vh;
     }
 
+    .banner-box button {
+        font-size: 13px;
+        font-weight: 600;
+        padding: 11px 18px;
+    }
 
     #sm-banner .banner-box{
         min-width: 101%;
-        height: 31vh;
+        height: 45vh;
         margin: 0 0px 50px;
     }
 
     #sm-banner h2 {
-        font-size: 37px;
-    }
-
-    #sm-banner span {
-        font-size: 26px;
+        font-size: 30px;
+        padding-bottom: 10px;
     }
 
     #banner3{
@@ -2532,9 +2538,13 @@ footer a:hover{
     #banner3 h2 {
         font-size: 30px;
     }
+    #banner h2 {
+        font-size: 22px;
+        padding: 0;
+    }
 
     #banner3 .banner-box {
-        height: 20vh;
+        height: 40vh;
         padding: 0px;
         margin-bottom: 20px;
         width: 32%;
@@ -2571,7 +2581,7 @@ footer a:hover{
     /*                                          blog  */
 
     #blog-head{
-        height: 30vh;
+        height: 40vh;
     }
 
     #blog {
@@ -2593,63 +2603,103 @@ footer a:hover{
         width: 100%;
     }
 
+    #blog .blog-details p{
+        font-size: 20px;
+    }
+
+
+    /*                                   about                   */
+
+    #about-head{
+        height: 30vh;
+    }
+
+    #about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    
+    #about img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    #about div {
+        padding-left: 0px;
+    }
+
     /*                                  single product image                      */
+
 
     #prodetails {
         display: flex;
+        margin-top: 20px;
         flex-direction: column;
     }
 
 
+    #prodetails .single-pro-image #MainImage {
+        height: 57vh;
+    }
 
+    .small-img-col img {
+        height: 15vh;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+        margin-top: 30px;
+    }
 
     #prodetails .single-pro-image {
         width: 100%;
         margin-right: 50px;
     }
 
-    /*                                                      contact  */
 
-    #contact_detail{
+    /*                              contact  */
+
+    #contact_detail {
         flex-direction: column;
+        align-items: start;
     }
 
-    #contact_detail .detail{
+    #contact_detail .detail h2, #form_detail form h2 {
+        font-size: 30px;
+        line-height: 35px;
+        width: 83vw;
+        padding: 20px 0;
+    }
+
+    #contact_detail .detail {
         width: 100%;
     }
 
     #contact_detail .map {
-        width: 90vw;
-        height: 68vh;
-        margin: 10vh 0 10vh 0vh;
+        width: 100%;
+        height: 70vh;
+        margin: 8vh 0 3vh 0vh;
     }
 
-    #form_detail {
-        width: 90vw;
-        padding-left: 6vw;
-
+    #form_detail form h2 {
+        font-size: 25px;
+        text-align: center;
     }
 
     #form_detail form{
         width: 100%;
     }
 
-    #form_detail form h2 {
-        font-size: 16px;
-    }
-
-    #contact_detail .detail span, #form_detail form span {
-        
-        margin-top: 17px;
-    }
-
-    #form_detail form input, 
-    #form_detail form text, 
-    #form_detail form textarea {
-        width: 77vw;
+    #form_detail {
+        width: 94vw;
     }
 
 }
+
+
 
 
 
@@ -2676,7 +2726,7 @@ footer a:hover{
     }
 
     .main{
-        height: 30vh;
+        height: 35vh;
     }
 
     .text-box{
@@ -2710,6 +2760,15 @@ footer a:hover{
         font-size: 9px;;
         width: 73px;
         padding: 10px 0px;
+        margin-top: 1vh;
+    }
+
+    .text-box h2 {
+        font-size: 3vw;
+        color: #ffff;
+        line-height: 30px;
+        
+
     }
     .text-box h3 {
         font-size: 3vw;
@@ -2725,13 +2784,15 @@ footer a:hover{
 
     .text-box span.text {
         font-size: 20px;
+        line-height: 30px;
     }
 
     a.button {
         font-size: 3vw;
-        padding: 7px 14px;
+        padding: 9px 14px;
         border-radius: 25px;
         margin-top: 5px;
+        width: 16vh;
     }
 
     #feature .fe-box {
@@ -2803,8 +2864,15 @@ footer a:hover{
     }
 
     #banner3 .banner-box {
-        width: 63vh;
+        width: 65vh;
         margin-bottom: 30px;
+    }
+
+    .banner-box button {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 6px 12px;
+        color: #ffffff;
     }
 
     #newsletter h4 {
@@ -2914,6 +2982,44 @@ footer a:hover{
     #blog .blog-details {
         width: 100%;
     }
+
+
+        /*                              contact  */
+
+        #contact_detail {
+            flex-direction: column;
+            align-items: start;
+        }
+        
+        #contact_detail .detail {
+            width: 100%;
+        }
+
+        #contact_detail .detail h2, #form_detail form h2 {
+            font-size: 30px;
+            line-height: 35px;
+            /* width: 75vh; */
+            padding: 20px 0;
+        }
+    
+        #contact_detail .map {
+            width: 100%;
+            height: 70vh;
+            margin: 8vh 0 3vh 0vh;
+        }
+    
+        #form_detail form h2 {
+            font-size: 25px;
+            text-align: center;
+        }
+    
+        #form_detail form{
+            width: 100%;
+        }
+    
+        #form_detail {
+            width: 94vw;
+        }
 
 
     /*                                              about */
@@ -3034,11 +3140,11 @@ footer a:hover{
     }
 
     a.button {
-        font-size: 3vw;
-        padding: 7px 14px;
+        font-size: 3.3vw;
+        padding: 9px 14px;
         border-radius: 25px;
         margin-top: 5px;
-        width: 12vh;
+        width: 14vh;
     }
 
     #feature .fe-box {
@@ -3290,4 +3396,41 @@ footer a:hover{
     #blog .blog-details {
         width: 100%;
     }
+
+        /*                              contact  */
+
+        #contact_detail {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        #contact_detail .detail {
+            width: 100%;
+        }
+    
+        #contact_detail .detail h2, #form_detail form h2 {
+            font-size: 23px;
+            line-height: 28px;
+            /* width: 75vh; */
+            padding: 20px 0;
+        }
+    
+        #contact_detail .map {
+            /* width: 71vh; */
+            height: 70vh;
+            margin: 8vh 0 3vh 0vh;
+        }
+    
+        #form_detail form h2 {
+            font-size: 25px;
+            text-align: center;
+        }
+    
+        #form_detail form{
+            width: 100%;
+        }
+    
+        #form_detail {
+            width: 94vw;
+        }
 }
